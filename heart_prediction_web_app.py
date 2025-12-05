@@ -10,10 +10,8 @@ import pickle
 import streamlit as st
 
 # loading the saved model
-loaded_model = pickle.load(open(
-    'C:/Users/Anshika Agarwal/Documents/streamlit/heart disease prediction/trained_model.sav',
-    'rb'
-))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
+
 
 # function for prediction
 def heart_prediction(input_data):
@@ -56,3 +54,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
